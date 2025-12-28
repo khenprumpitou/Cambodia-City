@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      /* background-color: rgb(238, 238, 238); */
+      background-image: url(../imgba/5.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+    }
+    .nav-bar {
+      width: 95%;
+      height: 124px;
+      background-color: rgba(83, 74, 74, 0.3);
+      border: solid rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      box-shadow: rgba(53, 50, 50, 0.4) 1px 3px 8px;
+      & .bar {
+        width: 97%;
+        & a {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+    .fotter {
+      display: flex;
+      justify-content: center;
+
+      & .foter {
+        margin-top: 20px;
+        width: 55%;
+        height: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(46, 217, 255, 0.4);
+        box-shadow: rgba(255, 255, 255, 0.34) 1px 3px 5px;
+        border-radius: 60px;
+        border: solid rgba(255, 255, 255, 0.768);
+
+        & h1 {
+          margin-top: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+    }
+    .Province {
+      & a {
+        & img {
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 25px;
+          width: 320px;
+          height: 250px;
+          object-fit: cover;
+          border: solid rgb(255, 255, 255, 0.8);
+          border-radius: 10px;
+        }
+      }
+    }
+    .title1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 230px;
+      height: 62px;
+      margin-left: 644px;
+      border-radius: 26px 5px 26px 5px;
+      background-color: rgb(21, 184, 225,1);
+      border: solid rgb(255, 255, 255, 0.7) 3px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -39px,
+        rgba(10, 37, 64, 0.35) 0px -4px 6px 0px inset;
+      & p {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+    }
+    .img {
+      display: flex;
+
+      & img {
+        margin-top: 40px;
+        margin-left: 95px;
+        width: 515px;
+        height: 390px;
+        border: solid white;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.54) 1px 3px 8px;
+      }
+
+      & .title {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        width: 515px;
+        height: 390px;
+        /* background-image: url(../imgba/dea038265a58372d66476c93937509f8.jpg); */
+        background-color: rgb(21, 184, 225,0.8);
+        object-fit: cover;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255, 0.8);
+        box-shadow: rgba(8, 189, 202, 0.54) 1px 3px 8px;
+        & p {
+          color: rgb(255, 255, 255);
+          margin-left: 225px;
+          font-size: 30px;
+        }
+        & .a {
+          gap: 50px;
+          display: flex;
+          margin-left: 50px;
+          & .roman-list1 {
+            list-style-type: upper-roman;
+            color: aliceblue;
+
+            & a {
+              text-decoration: none;
+              font-size: 22px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .senten {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+     
+    }
+    .sentenI {
+      width: 97%;
+      height: auto;
+      margin-top: 30px;
+       box-shadow: rgba(32, 33, 33, 0.54) 1px 3px 8px;
+      background-color: rgba(230, 230, 230, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .senten1 {
+      width: 320px;
+      height: 50px;
+      background-color: rgb(45, 196, 230);
+      border-radius: 8px;
+      border: solid rgb(255, 255, 255, 0.8);
+      box-shadow: rgba(16, 18, 18, 0.54) 1px 3px 8px;
+      & a {
+        & .h1 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h2 {
+           margin-left: 23px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h3 {
+          margin-left: 45px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h4 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h5 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h6 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h7 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h8 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+      }
+
+    }
+    .senten1_1 {
+      width: 100%;
+      display: flex;
+      & p {
+        width: 70%;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+      }
+
+      & img {
+        width: 30%;
+        height: 260px;
+        border-radius: 10px;
+        border: solid white;
+        box-shadow: rgba(28, 27, 27, 0.54) 1px 3px 8px;
+      }
+    }
+  </style>
+  <body>
+    <a name="up">
+    <div class="fotter">
+      <div class="foter">
+        <font face="Khmer OS Muol Light"
+          ><h1>ការពិពណ៍នាអំពី​ ខេត្តនីមួយៗនៃប្រទេសកម្ពុជា</h1></font
+        >
+      </div>
+    </div>
+
+    <center>
+      <div class="nav-bar">
+        <div class="bar">
+          <font face="Khmer OS Bokor">
+            <a style="text-decoration: none" href="index.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-house"
+              ></i
+              >ទំព័រដើម</a
+            >
+            <a style="text-decoration: none" href="ទំនាក់ទំនង.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-circle-user"
+              ></i
+              >ទំនាក់ទំនង</a
+            ><br />
+            <a href="ភ្នំពេញ.html">រាជធានីភ្នំពេញ</a>
+            <a href="កណ្តាល.html">កណ្តាល</a>
+            <a href="កំពង់ចាម.html">កំពង់ចាម</a>
+            <a href="កំពង់ឆ្នាំង.html">កំពង់ឆ្នាំង</a>
+            <a href="កំពង់ស្ពឺ.html">កំពង់ស្ពឺ</a>
+            <a href="កំពង់ធំ.html">កំពង់ធំ</a>
+            <a href="ពោធិ៍សាត់.html">ពោធិ៍សាត់</a>
+            <a href="កំពត.html">កំពត</a>
+            <a href="កែប.html">កែប</a>
+            <a href="កោះកុង.html">កោះកុង</a>
+            <a href="ក្រចេះ.html">ក្រចេះ</a>
+            <a href="ត្បូងឃ្មុំ.html">ត្បូងឃ្មុំ</a>
+            <a href="បាត់ដំបង.html">បាត់ដំបង</a>
+            <a href="ប៉ៃលិន.html">ប៉ៃលិន</a>
+            <a href="ព្រះសីហនុ.html">ព្រះសីហនុ</a>
+            <a href="ស្ទឹងត្រែង.html">ស្ទឹងត្រែង</a>
+            <a href="សៀមរាប.html">សៀមរាប</a>
+            <a href="ស្វាយរៀង.html">ស្វាយរៀង</a>
+            <a href="តាកែវ.html">តាកែវ</a>
+            <a href="រតនគីរី.html">រតនគិរី</a>
+            <a href="ព្រះវិហារ.html">ព្រះវិហារ</a>
+            <a href="ព្រៃវែង.html">ព្រៃវែង</a>
+            <a href="មណ្ឌលគីរី.html">មណ្ឌលគីរី</a>
+            <a href="ឧត្តរមានជ័យ.html">ឧត្តរមានជ័យ</a>
+            <a href="បន្ទាយមានជ័យ.html">បន្ទាយមានជ័យ</a>
+          </font>
+        </div>
+      </div>
+    </center>
+
+    <nav class="title1">
+      <p>
+        <font face="NiDA Preahvihear"
+          ><u><b>ខេត្តរតនគិរី</b></u></font
+        >
+      </p>
+    </nav>
+    <nav class="img">
+      <a name="UP1"></a>
+      <nav class="title">
+        <p><font face="AKbalthom Kbach">មាតិកា</font></p>
+        <nav class="a">
+          <ul class="roman-list1">
+            <font face="AKbalthom KhmerLer Regular">
+              <li>
+                <a href="#up1"
+                  >ភូមិសាស្រ្តខេត្តរតនគិរី..................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up2"
+                  >រដ្ឋបាល​និងការគ្រប់គ្រង...................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up3"
+                  >សេដ្ឋកិច្ច.........................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up4"
+                  >ការអភិវឌ្ឍន៍...................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up5"
+                  >ហេដ្ឋារចនាសម្ព័ន្ធ.............................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up6"
+                  >ចំនួនប្រជាជន..................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up7"
+                  >ការអប់រំ.........................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up8"
+                  >តំបន់ទេសចរណ៍..............................................។</a
+                >
+              </li>
+            </font>
+          </ul>
+        </nav>
+      </nav>
+      <img title="ខេត្តរតនគិរី" src="../imgs Province/Ratanakiri-01.jpg" alt="" />
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 315px;" class="senten1">
+          <a name="up1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">ភូមិសាស្រ្តខេត្តរតនគិរី</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីស្ថិតនៅភាគខាងកើតនៃប្រទេសកម្ពុជា មានព្រំប្រទល់ជាមួយប្រទេសវៀតណាមនៅភាគខាងកើត និងជិតខេត្តមណ្ឌលគិរីនិងសៀមរាប។ ភូមិសាស្រ្តខេត្តនេះមានភ្នំខ្ពស់ និងដីជ្រោយជ្រោយមួយចំនួន បង្កើតជាលក្ខណៈសម្រាប់ធ្វើកសិកម្ម និងព្រៃឈើធម្មជាតិ។ ទន្លេមួយចំនួនឆ្លងកាត់ខេត្ត ដូចជាទន្លេមេគង្គ និងទន្លេសាបដែលជួយផ្គត់ផ្គង់ទឹកសម្រាប់កសិកម្ម និងប្រើប្រាស់ទូទៅ។ ក៏មានអាកាសធាតុដែលស្អាត និងមានរដូវភ្លៀងច្បាស់លាស់ដែលមានអត្ថប្រយោជន៍សម្រាប់កសិកម្ម។ ទីតាំងភូមិសាស្រ្តនេះធ្វើឲ្យរតនគិរីក្លាយជាតំបន់សំខាន់សម្រាប់ពាណិជ្ជកម្ម និងការរីកចម្រើនសេដ្ឋកិច្ច។ បរិស្ថានធម្មជាតិត្រូវបានថែរក្សា និងមានការអភិវឌ្ឍន៍ប្រកបដោយចីរភាពក្នុងតំបន់នេះ។
+            </font>
+          </p>
+          <img src="../imgs Province/Ratanakiri-02.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 350px;" class="senten1">
+          <a name="up2"
+            ><h3 class="h2">
+              <font face="Khmer OS Moul">រដ្ឋបាល និង ការគ្រប់គ្រង</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../រតនគិរី/photo_1_2025-08-15_13-27-04.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីមានរដ្ឋបាលខេត្ត ដែលមានអំណាចគ្រប់គ្រងសេវាកម្មសាធារណៈ និងគោលនយោបាយក្នុងតំបន់។ ការគ្រប់គ្រងរួមមានការបែងចែកតំបន់ជាស្រុក និងឃុំ ដើម្បីងាយស្រួលក្នុងការគ្រប់គ្រងតំបន់កាន់តែមានប្រសិទ្ធភាព។ ការចូលរួមរបស់ប្រជាជនក្នុងការទទួលស្គាល់ និងអនុវត្តគោលការណ៍រដ្ឋបាលមានសារៈសំខាន់ក្នុងការជំរុញការអភិវឌ្ឍន៍នានា។ ក៏មានការបង្កើតគណៈកម្មការជាតិ និងមូលដ្ឋាន ដើម្បីដោះស្រាយបញ្ហាសង្គម និងបរិស្ថាន។ រដ្ឋបាលខេត្តកំពុងផ្តោតលើការកែលម្អសេវាកម្មសាធារណៈ ដូចជាសុខាភិបាល និងអប់រំសម្រាប់សម្រួលជីវភាពប្រជាជន។ ការគ្រប់គ្រងបរិស្ថាន និងធនធានធម្មជាតិត្រូវបានយកចិត្តទុកដាក់យ៉ាងខ្លាំងក្នុងតំបន់នេះ។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 200px;margin-left: 15px;" class="senten1">
+          <a name="up3"
+            ><h3 class="h3">
+              <font face="Khmer OS Moul">សេដ្ឋកិច្ច</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;សេដ្ឋកិច្ចខេត្តរតនគិរីមានមូលដ្ឋានធំលើកសិកម្ម និងកសិកម្មតិចតួច ដែលរួមមានការដាំស្រូវ បន្លែ និងការចិញ្ចឹមសត្វ។ ការចិញ្ចឹមសត្វមានទាំងជ្រូក គោ និងមាន់ ដែលជួយបង្កើនចំណូលសម្រាប់ប្រជាជនជាច្រើន។ ក៏មានការអភិវឌ្ឍវិស័យពាណិជ្ជកម្មតូចៗ និងសេវាកម្មជាប់ស្រុកដើម្បីគាំទ្រចំណូលប្រជាជន។ វិស័យឧស្សាហកម្មតូចមធ្យមកំពុងត្រូវបានលើកទឹកចិត្តសម្រាប់ការវិនិយោគ បង្កើតឱកាសការងារ និងកំណើនសេដ្ឋកិច្ច។ ការនាំចេញផលិតផលកសិកម្មក៏ជួយបង្កើនទឹកប្រាក់ចូលក្នុងតំបន់ និងជួយដល់ការរីកចម្រើនសេដ្ឋកិច្ចរបស់ខេត្ត។
+            </font>
+          </p>
+          <img src="../រតនគិរី/photo_2_2025-08-15_13-27-04.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up4"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ការអភិវឌ្ឍន៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../រតនគិរី/photo_3_2025-08-15_13-27-04.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីបានទទួលការវិនិយោគសំខាន់ក្នុងការកែលម្អហេដ្ឋារចនាសម្ព័ន្ធ ដូចជា ផ្លូវ និងសាលារៀន។ គម្រោងអភិវឌ្ឍបច្ចេកវិទ្យាទូរគមនាគមន៍ និងអគ្គិសនីកំពុងត្រូវបានបង្កើតឡើង ដើម្បីបង្កើនសេវាកម្មសាធារណៈ។ ការអភិវឌ្ឍប្រព័ន្ធទឹកស្អាត និងបរិស្ថានក៏គឺជាផ្នែកសំខាន់ក្នុងការពង្រឹងសុខភាពប្រជាជន។ ការផ្តល់ការបណ្តុះបណ្តាល និងជំនាញដល់យុវជនក្នុងតំបន់កំពុងត្រូវបានលើកទឹកចិត្ត ដើម្បីបង្កើនឱកាសការងារ។ ការអភិវឌ្ឍគម្រោងសេដ្ឋកិច្ច និងសង្គមមានគោលបំណងបង្កើនជីវភាពសម្បូរបែបសម្រាប់ប្រជាជន។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 300px;margin-left: 10px;" class="senten1">
+          <a name="up5"
+            ><h3 class="h5">
+              <font face="Khmer OS Moul">ហេដ្ឋារចនាសម្ព័ន្ធ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ហេដ្ឋារចនាសម្ព័ន្ធក្នុងខេត្តរតនគិរីមានការកែលម្អផ្លូវថ្នល់ជាតិ និងផ្លូវស្រុក ដើម្បីធានាការចរចារលឿន និងងាយស្រួល។ ប្រព័ន្ធផ្គត់ផ្គង់ទឹកស្អាត និងអគ្គិសនីកំពុងត្រូវបានពង្រីកដល់តំបន់ជាច្រើន។ ការកែលម្អសាលារៀន មន្ទីរពេទ្យ និងមជ្ឈមណ្ឌលសង្គមត្រូវបានអនុវត្តន៍យ៉ាងច្បាស់លាស់ ដើម្បីបំពេញតម្រូវការប្រជាជន។ ប្រព័ន្ធទូរគមនាគមន៍ និងអ៊ីនធឺណិតក៏កំពុងត្រូវបានលើកទឹកចិត្តឲ្យមានភាពទូលំទូលាយជាងមុន។ ការរួមគ្នារវាងរដ្ឋ និងឯកជនក្នុងការវិនិយោគបន្ថែមគឺជាគន្លងសំខាន់សម្រាប់ការរីកចម្រើនរបស់ខេត្ត។
+            </font>
+          </p>
+          <img src="../រតនគិរី/photo_4_2025-08-15_13-27-04.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up6"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ចំនួនប្រជាជន</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../រតនគិរី/photo_5_2025-08-15_13-27-04.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីមានប្រជាជនប្រហែល ៤២០,០០០ នាក់ ដែលភាគច្រើនជាជនជាតិខ្មែរ។ ក៏មានជនជាតិភូមា និងជនជាតិជាច្រើនផ្សេងទៀតរស់នៅក្នុងតំបន់នេះផងដែរ។ ចំនួនប្រជាជនកំពុងមានការកើនឡើងដោយសារការផ្លាស់ទី និងកំណើនធម្មជាតិ។ ប្រជាជនភាគច្រើនរស់នៅតំបន់ជនបទជុំវិញភូមិ និងស្រុក ដោយមានការសម្របសម្រួលជាមួយសេវាកម្មសាធារណៈ។ ការអភិវឌ្ឍន៍សុខាភិបាល និងអប់រំ បានធានាជីវភាពប្រសើរឡើងសម្រាប់ប្រជាជន។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 150px;margin-left: 15px;" class="senten1">
+          <a name="up7"
+            ><h3 class="h7">
+              <font face="Khmer OS Moul">ការអប់រំ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីមានបណ្តាសាលារៀនកាលីន និងវិទ្យាល័យជាច្រើនក្នុងតំបន់ ដើម្បីផ្តល់ឱកាសអប់រំសម្រាប់កុមារ និងយុវជន។ ការអប់រំគឺផ្នែកសំខាន់ក្នុងការអភិវឌ្ឍកម្លាំងមនុស្ស និងជំនាញវិជ្ជាជីវៈ។ សាលាឯកជន និងសាលាសាធារណៈបានផ្តល់ជំនាញ និងមុខវិជ្ជាផ្សេងៗដើម្បីបំពេញតម្រូវការផ្នែកការងារ។ ក៏មានគម្រោងបណ្តុះបណ្តាលបច្ចេកទេស និងវិជ្ជាជីវៈ ដើម្បីបង្កើនសមត្ថភាពយុវជនក្នុងការចូលរួមសេដ្ឋកិច្ច។ ការរួមចំណែករវាងរដ្ឋ និងសហគមន៍គឺជាចំណុចសំខាន់សម្រាប់ជំរុញការអប់រំ។
+            </font>
+          </p>
+          <img src="../រតនគិរី/photo_6_2025-08-15_13-27-04.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 30px;" class="senten1">
+          <a name="up8"
+            ><h3 class="h8">
+              <font face="Khmer OS Moul">តំបន់ទេសចរណ៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../រតនគិរី/photo_7_2025-08-15_13-27-04.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តរតនគិរីមានតំបន់ទេសចរណ៍ធម្មជាតិ និងវប្បធម៌ជាច្រើន ដែលទាក់ទាញភ្ញៀវទេសចរពីទូទាំងប្រទេស និងបរទេស។ ទឹកធ្លាក់ កន្លែងអាចធ្វើដំណើរដើរព្រៃ និងទេសភាពភ្នំជាច្រើន ជាតំបន់ទេសចរណ៍សំខាន់។ ការអភិវឌ្ឍការផ្គត់ផ្គង់សេវាកម្មទេសចរណ៍បានរីកចម្រើន ដើម្បីផ្តល់សេវាកម្មដែលមានគុណភាពខ្ពស់សម្រាប់ភ្ញៀវ។ ក៏មានការផ្តោតលើការការពារបរិស្ថាន និងបណ្តាញសេវាកម្មទេសចរណ៍បែបបៃតង។ ការសហការណ៍រវាងរដ្ឋ និងសហគមន៍ក្នុងការអភិរក្សវប្បធម៌ និងធនធានធម្មជាតិកំពុងត្រូវបានលើកទឹកចិត្តយ៉ាងខ្លាំង។ទឹកជ្រោះប៊ូស្រា៖ អ្នកទេសចរទាំងឡាយនៅពេលទៅដល់ខេត្តមណ្ឌលគីរី គឺរមែងមិនសូវជាចន្លោះនូវរមណីយដ្ឋានទឹកជ្រោះប៊ូស្រានោះឡើយ។ រមណីយដ្ឋាននេះស្ថិតក្នុងស្រុកពេជ្រចិន្ដា ចម្ងាយជាង ៤០ គីឡូម៉ែត្រពីស្រុកសែនមនោរម្យ ខេត្តសំបូរភ្នំមណ្ឌលគិរី។ 
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav style="width: 100%; height: 100px"></nav>
+
+    <a style="position: fixed; bottom: 57px; right: 20px" href="#up"
+      ><img width="50px" src="../img/button_up-removebg-preview.png" alt=""
+    /></a>
+
+  </body>
+</html>
