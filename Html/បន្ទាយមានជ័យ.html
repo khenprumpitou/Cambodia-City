@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      /* background-color: rgb(238, 238, 238); */
+      background-image: url(../imgba/5.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+    }
+    .nav-bar {
+      width: 95%;
+      height: 124px;
+      background-color: rgba(83, 74, 74, 0.3);
+      border: solid rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      box-shadow: rgba(53, 50, 50, 0.4) 1px 3px 8px;
+      & .bar {
+        width: 97%;
+        & a {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+    .fotter {
+      display: flex;
+      justify-content: center;
+
+      & .foter {
+        margin-top: 20px;
+        width: 55%;
+        height: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(46, 217, 255, 0.4);
+        box-shadow: rgba(255, 255, 255, 0.34) 1px 3px 5px;
+        border-radius: 60px;
+        border: solid rgba(255, 255, 255, 0.768);
+
+        & h1 {
+          margin-top: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+    }
+    .Province {
+      & a {
+        & img {
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 25px;
+          width: 320px;
+          height: 250px;
+          object-fit: cover;
+          border: solid rgb(255, 255, 255, 0.8);
+          border-radius: 10px;
+        }
+      }
+    }
+    .title1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 230px;
+      height: 62px;
+      margin-left: 644px;
+      border-radius: 26px 5px 26px 5px;
+      background-color: rgb(21, 184, 225,1);
+      border: solid rgb(255, 255, 255, 0.7) 3px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -39px,
+        rgba(10, 37, 64, 0.35) 0px -4px 6px 0px inset;
+      & p {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+    }
+    .img {
+      display: flex;
+
+      & img {
+        margin-top: 40px;
+        margin-left: 95px;
+        width: 515px;
+        height: 390px;
+        border: solid white;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.54) 1px 3px 8px;
+      }
+
+      & .title {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        width: 515px;
+        height: 390px;
+        /* background-image: url(../imgba/dea038265a58372d66476c93937509f8.jpg); */
+        background-color: rgb(21, 184, 225,0.8);
+        object-fit: cover;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255, 0.8);
+        box-shadow: rgba(8, 189, 202, 0.54) 1px 3px 8px;
+        & p {
+          color: rgb(255, 255, 255);
+          margin-left: 225px;
+          font-size: 30px;
+        }
+        & .a {
+          gap: 50px;
+          display: flex;
+          margin-left: 50px;
+          & .roman-list1 {
+            list-style-type: upper-roman;
+            color: aliceblue;
+
+            & a {
+              text-decoration: none;
+              font-size: 22px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .senten {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+     
+    }
+    .sentenI {
+      width: 97%;
+      height: auto;
+      margin-top: 30px;
+       box-shadow: rgba(32, 33, 33, 0.54) 1px 3px 8px;
+      background-color: rgba(230, 230, 230, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .senten1 {
+      width: 320px;
+      height: 50px;
+      background-color: rgb(45, 196, 230);
+      border-radius: 8px;
+      border: solid rgb(255, 255, 255, 0.8);
+      box-shadow: rgba(16, 18, 18, 0.54) 1px 3px 8px;
+      & a {
+        & .h1 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h2 {
+           margin-left: 23px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h3 {
+          margin-left: 45px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h4 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h5 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h6 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h7 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h8 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+      }
+
+    }
+    .senten1_1 {
+      width: 100%;
+      display: flex;
+      & p {
+        width: 70%;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+      }
+
+      & img {
+        width: 30%;
+        height: 260px;
+        border-radius: 10px;
+        border: solid white;
+        box-shadow: rgba(28, 27, 27, 0.54) 1px 3px 8px;
+      }
+    }
+  </style>
+  <body>
+    <a name="up">
+    <div class="fotter">
+      <div class="foter">
+        <font face="Khmer OS Muol Light"
+          ><h1>ការពិពណ៍នាអំពី​ ខេត្តនីមួយៗនៃប្រទេសកម្ពុជា</h1></font
+        >
+      </div>
+    </div>
+
+    <center>
+      <div class="nav-bar">
+        <div class="bar">
+          <font face="Khmer OS Bokor">
+            <a style="text-decoration: none" href="index.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-house"
+              ></i
+              >ទំព័រដើម</a
+            >
+            <a style="text-decoration: none" href="ទំនាក់ទំនង.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-circle-user"
+              ></i
+              >ទំនាក់ទំនង</a
+            ><br />
+            <a href="ភ្នំពេញ.html">រាជធានីភ្នំពេញ</a>
+            <a href="កណ្តាល.html">កណ្តាល</a>
+            <a href="កំពង់ចាម.html">កំពង់ចាម</a>
+            <a href="កំពង់ឆ្នាំង.html">កំពង់ឆ្នាំង</a>
+            <a href="កំពង់ស្ពឺ.html">កំពង់ស្ពឺ</a>
+            <a href="កំពង់ធំ.html">កំពង់ធំ</a>
+            <a href="ពោធិ៍សាត់.html">ពោធិ៍សាត់</a>
+            <a href="កំពត.html">កំពត</a>
+            <a href="កែប.html">កែប</a>
+            <a href="កោះកុង.html">កោះកុង</a>
+            <a href="ក្រចេះ.html">ក្រចេះ</a>
+            <a href="ត្បូងឃ្មុំ.html">ត្បូងឃ្មុំ</a>
+            <a href="បាត់ដំបង.html">បាត់ដំបង</a>
+            <a href="ប៉ៃលិន.html">ប៉ៃលិន</a>
+            <a href="ព្រះសីហនុ.html">ព្រះសីហនុ</a>
+            <a href="ស្ទឹងត្រែង.html">ស្ទឹងត្រែង</a>
+            <a href="សៀមរាប.html">សៀមរាប</a>
+            <a href="ស្វាយរៀង.html">ស្វាយរៀង</a>
+            <a href="តាកែវ.html">តាកែវ</a>
+            <a href="រតនគីរី.html">រតនគិរី</a>
+            <a href="ព្រះវិហារ.html">ព្រះវិហារ</a>
+            <a href="ព្រៃវែង.html">ព្រៃវែង</a>
+            <a href="មណ្ឌលគីរី.html">មណ្ឌលគីរី</a>
+            <a href="ឧត្តរមានជ័យ.html">ឧត្តរមានជ័យ</a>
+            <a href="បន្ទាយមានជ័យ.html">បន្ទាយមានជ័យ</a>
+          </font>
+        </div>
+      </div>
+    </center>
+
+    <nav class="title1">
+      <p>
+        <font face="NiDA Preahvihear"
+          ><u><b>ខេត្តបន្ទាយមានជ័យ</b></u></font
+        >
+      </p>
+    </nav>
+    <nav class="img">
+      <a name="UP1"></a>
+      <nav class="title">
+        <p><font face="AKbalthom Kbach">មាតិកា</font></p>
+        <nav class="a">
+          <ul class="roman-list1">
+            <font face="AKbalthom KhmerLer Regular">
+              <li>
+                <a href="#up1"
+                  >ភូមិសាស្រ្តខេត្តបន្ទាយមានជ័យ...........................។</a
+                >
+              </li>
+              <li>
+                <a href="#up2"
+                  >រដ្ឋបាល​និងការគ្រប់គ្រង...................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up3"
+                  >សេដ្ឋកិច្ច.........................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up4"
+                  >ការអភិវឌ្ឍន៍...................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up5"
+                  >ហេដ្ឋារចនាសម្ព័ន្ធ.............................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up6"
+                  >ចំនួនប្រជាជន..................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up7"
+                  >ការអប់រំ..........................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up8"
+                  >តំបន់ទេសចរណ៍..............................................។</a
+                >
+              </li>
+            </font>
+          </ul>
+        </nav>
+      </nav>
+      <img title="ខេត្តបន្ទាយមានជ័យ" src="../imgs Province/BanteayMeanchey-01.jpg" alt="" />
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 415px;" class="senten1">
+          <a name="up1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">ភូមិសាស្រ្តខេត្តបន្ទាយមានជ័យ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តបន្ទាយមានជ័យស្ថិតនៅភាគជើងនៃប្រទេសកម្ពុជា។
+ខេត្តនេះមានព្រំប្រទល់ជាមួយប្រទេសថៃខាងលិច។
+មានទីរួមខេត្តនៅក្រុងបន្ទាយមានជ័យ។
+ផ្ទៃដីរបស់ខេត្តគ្របដណ្តប់ប្រមាណ 6,679 គ.ម²។
+ភូមិសាស្ត្រមានទំនាបភាគច្រើនជាលំហស្រុកភាគជើងភាគខាងលិច។
+មានភ្នំជាច្រើន ដូចជា ភ្នំឈរ និងភ្នំរុងស្អិត។
+ទន្លេនិងប្រភពទឹកតូចៗកំពុងរីកចម្រើននៅតំបន់នេះ។
+ទំនើបភាពភូមិសាស្ត្រជួយឱ្យកសិកម្មកើនឡើងក្នុងតំបន់ជនបទ។
+ស្ថិតក្នុងតំបន់មានព្រៃធំ និងតំបន់ជនបទសម្បូរបែប។
+ជួយបង្កើតទីប្រជុំជន និងកសិកម្មដ៏មានសក្តានុពល។
+            </font>
+          </p>
+          <img src="../imgs Province/BanteayMeanchey-02.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 350px;" class="senten1">
+          <a name="up2"
+            ><h3 class="h2">
+              <font face="Khmer OS Moul">រដ្ឋបាល និង ការគ្រប់គ្រង</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../បន្ទាយមានជ័យ/photo_1_2025-08-15_13-30-08.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តបន្ទាយមានជ័យមានរដ្ឋបាលដឹកនាំដោយអភិបាលខេត្ត និងក្រុមប្រឹក្សាខេត្ត។
+បែងចែកជា ៧ ស្រុក និង ១ ក្រុងសម្រាប់ការគ្រប់គ្រងផ្លូវការរដ្ឋ។
+ក្រុមប្រឹក្សាឃុំ-សង្កាត់មានតួនាទីសំខាន់ក្នុងការផ្ដល់សេវាសាធារណៈ។
+ការគ្រប់គ្រងផ្អែកលើការរួមចំណែករបស់ប្រជាជន និងអង្គការសង្គមស៊ីវិល។
+បច្ចេកវិទ្យានិងទិន្នន័យស្ថិតនៅកម្រិតល្អសម្រាប់គ្រប់គ្រងអភិវឌ្ឍន៍។
+រដ្ឋបាលខេត្តអនុវត្តគោលនយោបាយជាតិ ដើម្បីរីកចម្រើនសេដ្ឋកិច្ច និងសង្គម។
+មានការប្រជុំសម្រាប់សម្រេចចិត្ត និងគ្រប់គ្រងគម្រោងទូទៅប្រចាំឆ្នាំ។
+អភិបាល និងមន្ត្រីមានការចូលរួមយ៉ាងសកម្មក្នុងការវិវឌ្ឍតំបន់។
+ប្រជាពលរដ្ឋមានសិទ្ធិចូលរួមក្នុងការគ្រប់គ្រងតាមប្រព័ន្ធបណ្តឹង និងសំណូមពរ។
+ការគ្រប់គ្រងផ្តោតលើការអភិវឌ្ឍប្រកបដោយភាពចីរភាព និងប្រកបដោយប្រសិទ្ធភាព។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 200px;margin-left: 15px;" class="senten1">
+          <a name="up3"
+            ><h3 class="h3">
+              <font face="Khmer OS Moul">សេដ្ឋកិច្ច</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;សេដ្ឋកិច្ចខេត្តបន្ទាយមានជ័យផ្អែកលើកសិកម្មជាចម្បង។
+កសិកម្មស្រូវ, បន្លែ និងផ្លែឈើគឺជាផលិតផលសំខាន់ៗ។
+ការចិញ្ចឹមសត្វ និងព្រៃឈើក៏មានសក្តានុពលសម្រាប់ការរីកចម្រើន។
+វិស័យពាណិជ្ជកម្មតូច និងសហគ្រាសតូចកំពុងរីកចម្រើនជាមួយនឹងការវិនិយោគ។
+មានទីផ្សារផ្សារ និងផ្លូវកាន់តែប្រសើរដើម្បីគាំទ្រការជួញដូរ។
+ក្រុមហ៊ុនឯកជន និងអាជីវកម្មសហគមន៍បានចូលរួមយ៉ាងសកម្ម។
+វិស័យផលិតកម្មតូច កំពុងចាប់ផ្តើមជំរុញការងារ និងការចំណូល។
+សេដ្ឋកិច្ចខេត្តទាក់ទាញការវិនិយោគទំនើបពីក្នុងស្រុក និងក្រៅស្រុក។
+ការអភិវឌ្ឍបរិស្ថានសេដ្ឋកិច្ចស្ថិតក្នុងគោលដៅដើម្បីរក្សាសម្រស់ធម្មជាតិ។
+សេដ្ឋកិច្ចខេត្តកំពុងតែមានការរីកចម្រើនយ៉ាងលឿន និងមានសក្តានុពល។
+            </font>
+          </p>
+          <img src="../បន្ទាយមានជ័យ/photo_2_2025-08-15_13-30-08.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up4"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ការអភិវឌ្ឍន៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../បន្ទាយមានជ័យ/photo_3_2025-08-15_13-30-08.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ការអភិវឌ្ឍខេត្តបន្ទាយមានជ័យផ្តោតលើការកែលម្អគ្រប់វិស័យ។
+រដ្ឋបានវិនិយោគក្នុងការសាងសង់ផ្លូវ, សាលារៀន និងមន្ទីរពេទ្យ។
+គម្រោងអភិវឌ្ឍសហគមន៍កំពុងបានគាំទ្រដោយអង្គការអន្តរជាតិ។
+ការអប់រំនិងសុខាភិបាលកំពុងកែលម្អ ដើម្បីលើកកម្ពស់គុណភាពជីវិត។
+មានការបង្កើតទីផ្សារថ្មី និងកន្លែងសម្រាកសម្រាប់អ្នកទេសចរ។
+ការអភិវឌ្ឍហេដ្ឋារចនាសម្ព័ន្ធធ្វើឲ្យមានភាពងាយស្រួលក្នុងការដឹកជញ្ជូន។
+គោលដៅសំខាន់របស់ខេត្តគឺបង្កើតការងារសម្រាប់យុវវ័យ។
+ការរីកចម្រើនបរិស្ថាន និងការការពារទ្រព្យសម្បត្តិធម្មជាតិ ក៏ត្រូវបានផ្តោតសំខាន់។
+សហគមន៍កសិកម្មទទួលបានជំនួយបច្ចេកទេស និងឧបករណ៍ដើម្បីលើកស្ទួយផលិតភាព។
+ការអភិវឌ្ឍន៍ត្រូវបានគ្រប់គ្រងដោយគោលការណ៍ច្បាស់លាស់ និងរឹងមាំ។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 300px;margin-left: 10px;" class="senten1">
+          <a name="up5"
+            ><h3 class="h5">
+              <font face="Khmer OS Moul">ហេដ្ឋារចនាសម្ព័ន្ធ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តបន្ទាយមានជ័យកំពុងអភិវឌ្ឍហេដ្ឋារចនាសម្ព័ន្ធសំខាន់ៗ ដូចជា ផ្លូវ និងស្ពាន។
+ផ្លូវជាតិ និងផ្លូវជាតិរងបានសាងសង់ឡើង ដើម្បីភ្ជាប់ទីក្រុង និងតំបន់ជនបទ។
+បណ្តាញអគ្គិសនីបានពង្រីកឆ្ពោះទៅឃុំភូមិ ដើម្បីគ្របដណ្តប់ការប្រើប្រាស់របស់ប្រជាជន។
+ការដាក់បំពង់ទឹកស្អាត និងប្រព័ន្ធចម្រាសទឹកកកកំពុងត្រូវបានកែលម្អយ៉ាងខ្លាំង។
+មានការសាងសង់មន្ទីរពេទ្យសាធារណៈ និងសាលារៀនជាច្រើនក្នុងតំបន់ស្រុក។
+សហគមន៍មានការចូលរួមសកម្មក្នុងការថែទាំ និងពង្រឹងហេដ្ឋារចនាសម្ព័ន្ធបុរាណ។
+គម្រោងផ្លូវកសិកម្មកំពុងត្រូវបានអភិវឌ្ឍ ដើម្បីលើកស្ទួយផលិតផលកសិកម្ម។
+ក្រុមហ៊ុនឯកជននិងអង្គការសង្គមស៊ីវិលបានចូលរួមរួមដំណើរការជាមួយរដ្ឋាភិបាល។
+ការវិនិយោគក្នុងហេដ្ឋារចនាសម្ព័ន្ធធ្វើឲ្យមានសេវាកម្មសាធារណៈប្រសើរឡើង។
+ហេដ្ឋារចនាសម្ព័ន្ធកាន់តែប្រសើរជួយបង្កើនសមត្ថភាពប្រកបការងារ និងការរីកចម្រើនសេដ្ឋកិច្ច។
+            </font>
+          </p>
+          <img src="../បន្ទាយមានជ័យ/photo_4_2025-08-15_13-30-08.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up6"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ចំនួនប្រជាជន</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../បន្ទាយមានជ័យ/photo_5_2025-08-15_13-30-08.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តបន្ទាយមានជ័យមានប្រជាជនប្រមាណ ២៤០,០០០ នាក់។
+ភាគច្រើនរស់នៅតំបន់ជនបទ និងចូលរួមក្នុងកសិកម្ម។
+អត្រាកំណើនប្រជាជនមានចន្លោះ ១.៥% ទៅ ២% ក្នុងមួយឆ្នាំ។
+ស្ត្រី និងបុរសមានសមាមាត្រប្រហែល ៥០/៥០ នៅក្នុងប្រជាជន។
+យុវវ័យមានភាគរយខ្ពស់ បង្កើតកម្លាំងការងារថ្មីក្នុងខេត្ត។
+ជនជាតិដើមភាគតិចក៏រស់នៅក្នុងតំបន់ជាច្រើនជុំវិញខេត្ត។
+ប្រជាជនកាន់តែចូលរួមក្នុងសកម្មភាពសហគមន៍ និងការអភិវឌ្ឍសង្គម។
+ប្រជាជនមានភាពរួមគ្នានិងការគាំទ្រក្នុងការរីកចម្រើនសេដ្ឋកិច្ច។
+អង្គការសុខាភិបាលបានផ្តល់សេវាសុខាភិបាលល្អប្រសើរដល់ប្រជាជន។
+ការចងចាំវប្បធម៌ និងទំនៀមទម្លាប់ផ្ដល់ភាពសាមញ្ញនិងសន្តិភាពសង្គម។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 150px;margin-left: 15px;" class="senten1">
+          <a name="up7"
+            ><h3 class="h7">
+              <font face="Khmer OS Moul">ការអប់រំ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ការអប់រំនៅខេត្តបន្ទាយមានជ័យកំពុងត្រូវបានពង្រឹងយ៉ាងខ្លាំង។
+សាលាបឋមសិក្សា និងមធ្យមសិក្សាត្រូវបានបង្កើតថ្មីជាច្រើន។
+គ្រូបង្រៀនបានទទួលការបណ្តុះបណ្តាលដើម្បីបង្កើនគុណភាពការបង្រៀន។
+ការចូលរួមរបស់កុមារនិងយុវជនក្នុងការសិក្សាកាន់តែខ្ពស់។
+កម្មវិធីអប់រំបច្ចេកទេស និងវិជ្ជាជីវៈកំពុងត្រូវបានពង្រឹងជាមិនចាញ់។
+មានគម្រោងផ្តល់អាហារថ្ងៃត្រង់សម្រាប់កុមារក្រីក្រនៅសាលារៀន។
+ការផ្តល់ឱកាសអប់រំនៅតាមជនបទក៏បានកើនឡើង។
+ក្រសួងអប់រំបានសម្របសម្រួលដើម្បីធានាគុណភាពបណ្តុះបណ្តាលគ្រូ។
+ការអប់រំនេះកំពុងជួយបង្កើតកម្លាំងមនុស្សមានជំនាញសម្រាប់អនាគតខេត្ត។
+ការអភិវឌ្ឍការអប់រំនឹងមានអត្ថប្រយោជន៍ចំពោះសេដ្ឋកិច្ច និងសង្គមជាទូទៅ។
+            </font>
+          </p>
+          <img src="../បន្ទាយមានជ័យ/photo_6_2025-08-15_13-30-08.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up8"
+            ><h3 class="h8">
+              <font face="Khmer OS Moul">តំបន់ទេសចរណ៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../បន្ទាយមានជ័យ/photo_7_2025-08-15_13-30-08.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តបន្ទាយមានជ័យមានធនធានទេសចរណ៍ធម្មជាតិ និងវប្បធម៌សម្បូរបែប។
+បឹងព្រះស្រែក ជាតំបន់ទេសចរណ៍ទាក់ទាញភ្ញៀវពីក្នុងស្រុកនិងក្រៅស្រុក។
+មានវត្តបុរាណ និងប្រាសាទជាច្រើន ដែលមានតម្លៃប្រវត្តិសាស្ត្រ។
+ទេសភាពភ្នំ និងព្រៃធំគឺជាកន្លែងសម្រាប់ការធ្វើដំណើរដើរព្រៃ។
+ស្រុកជនបទមានវប្បធម៌ប្រពៃណីដែលអាចទាក់ទាញភ្ញៀវទេសចរ។
+បណ្តាញទេសចរណ៍សហគមន៍កំពុងត្រូវបានអភិវឌ្ឍន៍ជាមួយគម្រោងរដ្ឋនិងអង្គការ។
+មានការផ្តល់សេវាកម្មទេសចរណ៍ដែលអាចជួយបង្កើនចំណូលសហគមន៍។
+ការរក្សាទុកបរិស្ថានធម្មជាតិនិងវប្បធម៌ជាគោលបំណងសំខាន់។
+ទេសចរណ៍កំពុងតែរីកចម្រើនជាមួយនឹងការគាំទ្រពីរដ្ឋាភិបាល។
+ខេត្តបន្ទាយមានជ័យមានសក្តានុពលខ្ពស់ក្នុងការអភិវឌ្ឍទេសចរណ៍ប្រកបដោយចីរភាព។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav style="width: 100%; height: 100px"></nav>
+
+    <a style="position: fixed; bottom: 57px; right: 20px" href="#up"
+      ><img width="50px" src="../img/button_up-removebg-preview.png" alt=""
+    /></a>
+
+  </body>
+</html>

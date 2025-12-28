@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      /* background-color: rgb(238, 238, 238); */
+      background-image: url(../imgba/5.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+    }
+    .nav-bar {
+      width: 95%;
+      height: 124px;
+      background-color: rgba(83, 74, 74, 0.3);
+      border: solid rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      box-shadow: rgba(53, 50, 50, 0.4) 1px 3px 8px;
+      & .bar {
+        width: 97%;
+        & a {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+    .fotter {
+      display: flex;
+      justify-content: center;
+
+      & .foter {
+        margin-top: 20px;
+        width: 55%;
+        height: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(46, 217, 255, 0.4);
+        box-shadow: rgba(255, 255, 255, 0.34) 1px 3px 5px;
+        border-radius: 60px;
+        border: solid rgba(255, 255, 255, 0.768);
+
+        & h1 {
+          margin-top: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+    }
+    .Province {
+      & a {
+        & img {
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 25px;
+          width: 320px;
+          height: 250px;
+          object-fit: cover;
+          border: solid rgb(255, 255, 255, 0.8);
+          border-radius: 10px;
+        }
+      }
+    }
+    .title1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 230px;
+      height: 62px;
+      margin-left: 644px;
+      border-radius: 26px 5px 26px 5px;
+      background-color: rgb(21, 184, 225,1);
+      border: solid rgb(255, 255, 255, 0.7) 3px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -39px,
+        rgba(10, 37, 64, 0.35) 0px -4px 6px 0px inset;
+      & p {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+    }
+    .img {
+      display: flex;
+
+      & img {
+        margin-top: 40px;
+        margin-left: 95px;
+        width: 515px;
+        height: 390px;
+        border: solid white;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.54) 1px 3px 8px;
+      }
+
+      & .title {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        width: 515px;
+        height: 390px;
+        /* background-image: url(../imgba/dea038265a58372d66476c93937509f8.jpg); */
+        background-color: rgb(21, 184, 225,0.8);
+        object-fit: cover;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255, 0.8);
+        box-shadow: rgba(8, 189, 202, 0.54) 1px 3px 8px;
+        & p {
+          color: rgb(255, 255, 255);
+          margin-left: 225px;
+          font-size: 30px;
+        }
+        & .a {
+          gap: 50px;
+          display: flex;
+          margin-left: 50px;
+          & .roman-list1 {
+            list-style-type: upper-roman;
+            color: aliceblue;
+
+            & a {
+              text-decoration: none;
+              font-size: 22px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .senten {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+     
+    }
+    .sentenI {
+      width: 97%;
+      height: auto;
+      margin-top: 30px;
+       box-shadow: rgba(32, 33, 33, 0.54) 1px 3px 8px;
+      background-color: rgba(230, 230, 230, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .senten1 {
+      width: 320px;
+      height: 50px;
+      background-color: rgb(45, 196, 230);
+      border-radius: 8px;
+      border: solid rgb(255, 255, 255, 0.8);
+      box-shadow: rgba(16, 18, 18, 0.54) 1px 3px 8px;
+      & a {
+        & .h1 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h2 {
+           margin-left: 23px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h3 {
+          margin-left: 45px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h4 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h5 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h6 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h7 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h8 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+      }
+
+    }
+    .senten1_1 {
+      width: 100%;
+      display: flex;
+      & p {
+        width: 70%;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+      }
+
+      & img {
+        width: 30%;
+        height: 260px;
+        border-radius: 10px;
+        border: solid white;
+        box-shadow: rgba(28, 27, 27, 0.54) 1px 3px 8px;
+      }
+    }
+  </style>
+  <body>
+    <a name="up">
+    <div class="fotter">
+      <div class="foter">
+        <font face="Khmer OS Muol Light"
+          ><h1>ការពិពណ៍នាអំពី​ ខេត្តនីមួយៗនៃប្រទេសកម្ពុជា</h1></font
+        >
+      </div>
+    </div>
+
+    <center>
+      <div class="nav-bar">
+        <div class="bar">
+          <font face="Khmer OS Bokor">
+            <a style="text-decoration: none" href="index.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-house"
+              ></i
+              >ទំព័រដើម</a
+            >
+            <a style="text-decoration: none" href="ទំនាក់ទំនង.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-circle-user"
+              ></i
+              >ទំនាក់ទំនង</a
+            ><br />
+            <a href="ភ្នំពេញ.html">រាជធានីភ្នំពេញ</a>
+            <a href="កណ្តាល.html">កណ្តាល</a>
+            <a href="កំពង់ចាម.html">កំពង់ចាម</a>
+            <a href="កំពង់ឆ្នាំង.html">កំពង់ឆ្នាំង</a>
+            <a href="កំពង់ស្ពឺ.html">កំពង់ស្ពឺ</a>
+            <a href="កំពង់ធំ.html">កំពង់ធំ</a>
+            <a href="ពោធិ៍សាត់.html">ពោធិ៍សាត់</a>
+            <a href="កំពត.html">កំពត</a>
+            <a href="កែប.html">កែប</a>
+            <a href="កោះកុង.html">កោះកុង</a>
+            <a href="ក្រចេះ.html">ក្រចេះ</a>
+            <a href="ត្បូងឃ្មុំ.html">ត្បូងឃ្មុំ</a>
+            <a href="បាត់ដំបង.html">បាត់ដំបង</a>
+            <a href="ប៉ៃលិន.html">ប៉ៃលិន</a>
+            <a href="ព្រះសីហនុ.html">ព្រះសីហនុ</a>
+            <a href="ស្ទឹងត្រែង.html">ស្ទឹងត្រែង</a>
+            <a href="សៀមរាប.html">សៀមរាប</a>
+            <a href="ស្វាយរៀង.html">ស្វាយរៀង</a>
+            <a href="តាកែវ.html">តាកែវ</a>
+            <a href="រតនគីរី.html">រតនគិរី</a>
+            <a href="ព្រះវិហារ.html">ព្រះវិហារ</a>
+            <a href="ព្រៃវែង.html">ព្រៃវែង</a>
+            <a href="មណ្ឌលគីរី.html">មណ្ឌលគីរី</a>
+            <a href="ឧត្តរមានជ័យ.html">ឧត្តរមានជ័យ</a>
+            <a href="បន្ទាយមានជ័យ.html">បន្ទាយមានជ័យ</a>
+          </font>
+        </div>
+      </div>
+    </center>
+
+    <nav class="title1">
+      <p>
+        <font face="NiDA Preahvihear"
+          ><u><b>ខេត្តក្រចេះ</b></u></font
+        >
+      </p>
+    </nav>
+    <nav class="img">
+      <a name="UP1"></a>
+      <nav class="title">
+        <p><font face="AKbalthom Kbach">មាតិកា</font></p>
+        <nav class="a">
+          <ul class="roman-list1">
+            <font face="AKbalthom KhmerLer Regular">
+              <li>
+                <a href="#up1"
+                  >ភូមិសាស្រ្តខេត្តក្រចេះ........................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up2"
+                  >រដ្ឋបាល​និងការគ្រប់គ្រង...................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up3"
+                  >សេដ្ឋកិច្ច.........................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up4"
+                  >ការអភិវឌ្ឍន៍...................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up5"
+                  >ហេដ្ឋារចនាសម្ព័ន្ធ.............................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up6"
+                  >ចំនួនប្រជាជន..................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up7"
+                  >ការអប់រំ..........................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up8"
+                  >តំបន់ទេសចរណ៍..............................................។</a
+                >
+              </li>
+            </font>
+          </ul>
+        </nav>
+      </nav>
+      <img title="ខេត្តក្រចេះ" src="../imgs Province/Kratie-01.jpg" alt="" />
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 300px;" class="senten1">
+          <a name="up1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">ភូមិសាស្រ្តខេត្តក្រចេះ</font>
+            </h3></a
+          >
+        </nav>
+                <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តក្រចេះស្ថិតនៅភាគកើតនៃប្រទេសកម្ពុជា ជាប់ទន្លេមេគង្គ និងព្រំប្រទល់នឹងប្រទេសឡាវ។
+ខេត្តមានផ្ទៃដីប្រហែល ១១,០៥២ គ.ម² ហើយបែងចែកជា ៦ ស្រុក និងក្រុងក្រចេះ។
+ភាគដ៏សំខាន់នៃខេត្តស្ថិតតាមបណ្តោយទន្លេមេគង្គដែលសំបូរទឹកនិងទន្លេតូចៗជាច្រើន។
+ភូមិសាស្ត្រមានលក្ខណៈទន់លាប ប្រកបដោយព្រៃឈើ ទន្លេ និងដីកសិកម្មសម្បូរ។
+ខេត្តនេះមានព្រៃស្រងាត់ និងតំបន់ទន្លេជាច្រើនដែលសមស្របសម្រាប់កសិកម្ម និងនេសាទ។
+ក្រចេះមានសេដ្ឋកិច្ចផ្អែកលើធនធានធម្មជាតិដូចជា ការកាប់ឈើ កសិដ្ឋាន និងនេសាទ។
+ទីរួមខេត្តគឺក្រុងក្រចេះ ដែលស្ថិតនៅលើអែរទន្លេមេគង្គ និងមានសេដ្ឋកិច្ចចម្រើន។
+បរិស្ថានធម្មជាតិនៅទីនេះនៅសុទ្ធសាធខ្លាំង បង្កើតឱកាសទេសចរណ៍ជាច្រើន។
+ភូមិសាស្ត្ររួមមានភ្នំតូចៗ ទន្លេ កោះធម្មជាតិ និងដីកសិកម្មសម្បូរ។
+នេះជាខេត្តមានអនាគតខ្ពស់សម្រាប់អភិវឌ្ឍន៍បៃតង និងទេសចរណ៍ចីរភាព។
+            </font>
+          </p>
+          <img src="../imgs Province/Kratie-02.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 350px;" class="senten1">
+          <a name="up2"
+            ><h3 class="h2">
+              <font face="Khmer OS Moul">រដ្ឋបាល និង ការគ្រប់គ្រង</font>
+            </h3></a
+          >
+        </nav>
+         <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ក្រចេះ/photo_1_2025-08-15_13-17-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តក្រចេះត្រូវបានគ្រប់គ្រងដោយអភិបាលខេត្ត និងមានក្រុមប្រឹក្សាខេត្តអនុវត្តការអភិវឌ្ឍន៍។
+ខេត្តមានស្រុកចំនួន ៦ រួមមានស្រុកសំបូរ ស្រុកសំប៉ោង ស្រុកសេរីសោភ័ណ និងស្រុកចិត្របុរី។
+ក្រុងក្រចេះគឺជាកន្លែងស្នាក់ការរដ្ឋ និងសេដ្ឋកិច្ចសំខាន់បំផុតនៃខេត្ត។
+រដ្ឋបាលមូលដ្ឋានក៏មានការចូលរួមសកម្មពីប្រជាពលរដ្ឋតាមរយៈក្រុមប្រឹក្សាស្រុក។
+មានការសហការល្អរវាងរដ្ឋ, អង្គការមិនមែនរដ្ឋាភិបាល និងវិស័យឯកជនក្នុងការអភិវឌ្ឍ។
+អាជ្ញាធរខេត្តបានផ្តោតលើការគ្រប់គ្រងធនធានធម្មជាតិ និងការជួយសហគមន៍។
+ការចុះមូលដ្ឋាន ការសិក្សាស្ថានភាព និងគម្រោងអភិវឌ្ឍត្រូវបានអនុវត្តជាទៀងទាត់។
+រដ្ឋបាលកំពុងរួមចំណែកពង្រឹងការអប់រំ សុខភាព និងសេដ្ឋកិច្ចក្នុងខេត្ត។
+មានការអភិវឌ្ឍប្រព័ន្ធព័ត៌មាន និងទំនាក់ទំនងបច្ចេកវិទ្យាថ្មីៗនៅលើផ្នែករដ្ឋបាល។
+ការគ្រប់គ្រងខេត្តផ្អែកលើគោលនយោបាយជាតិចីរភាព និងអភិវឌ្ឍដ៏សមស្រប។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 200px;margin-left: 15px;" class="senten1">
+          <a name="up3"
+            ><h3 class="h3">
+              <font face="Khmer OS Moul">សេដ្ឋកិច្ច</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;សេដ្ឋកិច្ចខេត្តក្រចេះផ្អែកលើកសិកម្ម, នេសាទ, ពាណិជ្ជកម្មតូច និងទេសចរណ៍។
+ប្រជាជនភាគច្រើនប្រកបអាជីពដាំស្រូវ, ដាំបន្លែ និងចិញ្ចឹមសត្វគ្រប់ប្រភេទ។
+ដំណាំស្រែ និងដំណាំឈើកសិកម្មផ្សេងៗជាប្រភពចំណូលសំខាន់សម្រាប់គ្រួសារ។
+តំបន់ជាប់ទន្លេមានការងារនេសាទ និងចិញ្ចឹមត្រីយ៉ាងច្រើន។
+ទីផ្សារ និងពាណិជ្ជកម្មកំពុងរីកចម្រើនជាពិសេសនៅក្រុងក្រចេះ និងតាមផ្លូវជាតិ។
+ការជួញដូរលើផលិតផលកសិកម្មបានពង្រីកពីផ្លូវជាតិទៅទីផ្សារផ្សេងទៀត។
+មានការវិនិយោគខ្នាតតូចនៅផ្នែកកសិផល និងទេសចរណ៍ធម្មជាតិ។
+សេដ្ឋកិច្ចសហគមន៍កំពុងត្រូវបានលើកកម្ពស់តាមគម្រោងអភិវឌ្ឍជាច្រើន។
+វិស័យសេដ្ឋកិច្ចបៃតង និងអេកូទេសចរណ៍ក៏កំពុងក្លាយជាទិសដៅថ្មី។
+សេដ្ឋកិច្ចខេត្តកំពុងមានសក្តានុពលក្នុងការរីកចម្រើនតាមរយៈបច្ចេកវិទ្យា និងឧស្សាហកម្មបៃតង។
+            </font>
+          </p>
+          <img src="../ក្រចេះ/photo_2_2025-08-15_13-17-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up4"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ការអភិវឌ្ឍន៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ក្រចេះ/photo_3_2025-08-15_13-17-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តក្រចេះកំពុងអភិវឌ្ឍផ្នែកសេដ្ឋកិច្ចសហគមន៍ កសិកម្មចីរភាព និងទេសចរណ៍ធម្មជាតិ។
+គម្រោងអភិវឌ្ឍនៅតំបន់ជាប់ទន្លេនិងជាយព្រៃត្រូវបានអនុវត្តជាមួយសហគមន៍ក្នុងតំបន់។
+អង្គការសហគមន៍ និងអន្តរជាតិបានគាំទ្រការអភិវឌ្ឍគ្រប់វិស័យ ដូចជាការអប់រំ, កសិកម្ម។
+ការបង្កើតទីផ្សារកសិកម្ម និងសហគមន៍ស្រែអង្ករកំពុងកើនឡើងបន្តបន្ទាប់។
+មានការផ្តោតលើការអភិវឌ្ឍអេកូទេសចរណ៍ ដូចជា កោះទន្លេ និងព្រៃដើមឈើសុទ្ធសាធ។
+សហគមន៍តូចៗត្រូវបានបណ្តុះបណ្តាលក្នុងការបង្កើតអាជីវកម្មតូចៗឯករាជ្យ។
+ផែនការអភិវឌ្ឍត្រូវបានបែងចែកតាមតំបន់ ដើម្បីធានាការរីកចម្រើនមានសមភាព។
+រដ្ឋជំរុញការចូលរួមរបស់ស្ត្រី និងយុវជនក្នុងការអភិវឌ្ឍសហគមន៍។
+ការគ្រប់គ្រងធនធានធម្មជាតិត្រូវបានធ្វើតាមគោលនយោបាយការពារបរិស្ថាន។
+ទិសដៅអភិវឌ្ឍន៍ក្រចេះផ្អែកលើគន្លង “បៃតង - ចីរភាព - សហគមន៍”។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 300px;margin-left: 10px;" class="senten1">
+          <a name="up5"
+            ><h3 class="h5">
+              <font face="Khmer OS Moul">ហេដ្ឋារចនាសម្ព័ន្ធ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តក្រចេះបានធ្វើការកែលម្អលើផ្លូវលំ និងស្ថាបនាផ្លូវថ្នល់ថ្មីៗយ៉ាងច្រើន។
+ផ្លូវជាតិលេខ៧ និងផ្លូវរងសំខាន់ៗត្រូវបានកែលម្អសម្រាប់ការដឹកជញ្ជូនទំនិញ។
+ស្ពានឆ្លងទន្លេមេគង្គត្រូវបានគេចង់អភិវឌ្ឍដើម្បីភ្ជាប់ក្រុងនិងស្រុកជាយឆ្ងាយ។
+ប្រព័ន្ធអគ្គិសនីបានពង្រីកទៅឃុំភាគច្រើនក្នុងខេត្ត ដោយប្រើជំនួយពីអង្គការ។
+មានការសាងសង់សាលារៀន ថ្នាក់បឋម និងមធ្យមជាច្រើន នៅជាយឃុំ។
+បណ្តាញទឹកស្អាត ត្រូវបានធ្វើនៅក្រុង និងតំបន់ដែលមានប្រជាជនសម្បូរ។
+ការដំឡើងបណ្តាញអ៊ីនធឺណិតកំពុងបន្តទៅតាមភូមិដ៏ឆ្ងាយ។
+មន្ទីរពេទ្យខេត្ត និងមន្ទីរពេទ្យស្រុកត្រូវបានកែលម្អនិងបន្ថែមឧបករណ៍វេជ្ជសាស្ត្រ។
+រដ្ឋបានពង្រឹងការភ្ជាប់សេដ្ឋកិច្ចជាមួយខេត្តជិតខាងតាមផ្លូវរថភ្លើងនិងទូក។
+ស្ថាបនាកម្មថ្មីៗកំពុងបន្តជួយជំរុញការអភិវឌ្ឍសេដ្ឋកិច្ចនៅក្នុងខេត្ត។
+            </font>
+          </p>
+          <img src="../ក្រចេះ/photo_4_2025-08-15_13-17-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up6"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ចំនួនប្រជាជន</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ក្រចេះ/photo_5_2025-08-15_13-17-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;តាមរបាយការណ៍ឆ្នាំ ២០១៩ ខេត្តក្រចេះមានប្រជាជនប្រមាណជាង ៣៧០,០០០ នាក់។
+ប្រជាជនភាគច្រើនរស់នៅជាយទន្លេមេគង្គ និងប្រកបរបរកសិកម្ម និងនេសាទ។
+សាច់ញាតិក្នុងគ្រួសារច្រើនរស់នៅជាក្រុមកសិករ និងចិញ្ចឹមសត្វជុំវិញទឹក។
+អត្រាកំណើនប្រជាជនមានទំហំមធ្យម ប៉ុន្តែការផ្លាស់ទីពីខេត្តជិតខាងកើនឡើង។
+ក្រុមជនជាតិដើមភាគតិច រួមមាន កួន ចាម និងឡាវរស់នៅតាមជាយព្រៃ។
+អាជ្ញាធរផ្តល់សេវាសុខភាពដល់សហគមន៍ជាយឆ្ងាយ ដោយមានមន្ទីរពេទ្យចល័ត។
+ប្រជាជនមានវ័យក្មេងច្រើន ហើយអនុវិទ្យាល័យនិងវិទ្យាល័យកើនឡើងនាពេលខាងក្រោយ។
+រដ្ឋបានអនុវត្តគម្រោងបង្កើនការចុះបញ្ជីសញ្ជាតិ និងអត្តសញ្ញាណសម្រាប់ប្រជាជន។
+ភាពជាដៃគូសហគមន៍ក្នុងការអភិវឌ្ឍន៍សេដ្ឋកិច្ចក៏កំពុងកើនឡើង។
+ប្រជាជនមានបំណងចូលរួមក្នុងការអភិវឌ្ឍន៍ និងការអប់រំនៅក្នុងសហគមន៍ខ្លួន។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 150px;margin-left: 15px;" class="senten1">
+          <a name="up7"
+            ><h3 class="h7">
+              <font face="Khmer OS Moul">ការអប់រំ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ការអប់រំនៅក្រចេះកំពុងរីកចម្រើនជាបន្តបន្ទាប់ បើប្រៀបធៀបទៅនឹងអតីតកាល។
+សាលាបឋមសិក្សា និងមធ្យមសិក្សាត្រូវបានកែលម្អ និងសាងសង់ថ្មីៗច្រើន។
+គ្រូបង្រៀនត្រូវបានបណ្តុះបណ្តាលបន្ថែម ហើយមានកិច្ចសហការជាមួយអង្គការអប់រំ។
+អង្គការបរទេសជួយផ្តល់សម្ភារៈសិក្សា និងអាហារសិស្សនៅតំបន់ក្រីក្រ។
+ការចូលសាលារបស់កុមារ និងសិស្សស្រីបានកើនឡើងដោយសារមានការលើកទឹកចិត្ត។
+ការបង្កើតមជ្ឈមណ្ឌលបណ្ដុះបណ្ដាលបច្ចេកទេស ធ្វើឲ្យយុវជនមានជំនាញសម្រាប់ការងារ។
+មានសហគមន៍សិក្សាសម្រាប់មនុស្សពេញវ័យក្នុងការអានសរសេរ និងគណនា។
+បច្ចេកវិទ្យាសម្រាប់ការសិក្សាក៏ចាប់ផ្តើមចូលរួមតាមសាលានៅក្រុងនិងជាយក្រុង។
+មានការផ្តោតលើការអប់រំពីបរិស្ថាន សុខភាព និងសិទ្ធិមនុស្សនៅតាមសាលា។
+គុណភាពការអប់រំនៅក្រចេះកំពុងប្រសើរឡើង និងមានទិសដៅដ៏ច្បាស់លាស់។
+            </font>
+          </p>
+          <img src="../ក្រចេះ/photo_6_2025-08-15_13-17-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up8"
+            ><h3 class="h8">
+              <font face="Khmer OS Moul">តំបន់ទេសចរណ៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ក្រចេះ/photo_7_2025-08-15_13-17-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តក្រចេះល្បីលើទេសចរណ៍ធម្មជាតិ ជាពិសេសជលផល និងទន្លេមេគង្គ។
+កោះទន្លេក្រចេះ គឺជាគោលដៅទេសចរណ៍ធម្មជាតិពេញនិយម មានផ្ទះលំហែកាយបែបសាមញ្ញ។
+ពពែទន្លេ (ដុលហ្វាំង) ជាសត្វស្លាប់ដឹកភ្ញៀវជាតិអន្តរជាតិមកទស្សនា។
+វត្តសំបូរ, វត្តរលាច, និងតំបន់បុរាណផ្សេងៗផងដែរក្លាយជាកន្លែងទាក់ទាញ។
+អូររាក់, ទន្លេក្រចេះ, និងព្រៃឈើជាតំបន់ស្អាតសម្រាប់សកម្មភាពកម្សាន្ត។
+កសិទេសចរណ។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav style="width: 100%; height: 100px"></nav>
+
+    <a style="position: fixed; bottom: 57px; right: 20px" href="#up"
+      ><img width="50px" src="../img/button_up-removebg-preview.png" alt=""
+    /></a>
+
+  </body>
+</html>

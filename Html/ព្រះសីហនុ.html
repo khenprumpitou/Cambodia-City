@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      /* background-color: rgb(238, 238, 238); */
+      background-image: url(../imgba/5.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+    }
+    .nav-bar {
+      width: 95%;
+      height: 124px;
+      background-color: rgba(83, 74, 74, 0.3);
+      border: solid rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      box-shadow: rgba(53, 50, 50, 0.4) 1px 3px 8px;
+      & .bar {
+        width: 97%;
+        & a {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+    .fotter {
+      display: flex;
+      justify-content: center;
+
+      & .foter {
+        margin-top: 20px;
+        width: 55%;
+        height: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(46, 217, 255, 0.4);
+        box-shadow: rgba(255, 255, 255, 0.34) 1px 3px 5px;
+        border-radius: 60px;
+        border: solid rgba(255, 255, 255, 0.768);
+
+        & h1 {
+          margin-top: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+    }
+    .Province {
+      & a {
+        & img {
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 25px;
+          width: 320px;
+          height: 250px;
+          object-fit: cover;
+          border: solid rgb(255, 255, 255, 0.8);
+          border-radius: 10px;
+        }
+      }
+    }
+    .title1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 230px;
+      height: 62px;
+      margin-left: 644px;
+      border-radius: 26px 5px 26px 5px;
+      background-color: rgb(21, 184, 225,1);
+      border: solid rgb(255, 255, 255, 0.7) 3px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -39px,
+        rgba(10, 37, 64, 0.35) 0px -4px 6px 0px inset;
+      & p {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+    }
+    .img {
+      display: flex;
+
+      & img {
+        margin-top: 40px;
+        margin-left: 95px;
+        width: 515px;
+        height: 390px;
+        border: solid white;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.54) 1px 3px 8px;
+      }
+
+      & .title {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        width: 515px;
+        height: 390px;
+        /* background-image: url(../imgba/dea038265a58372d66476c93937509f8.jpg); */
+        background-color: rgb(21, 184, 225,0.8);
+        object-fit: cover;
+        border-radius: 10px;
+        border: solid rgb(255, 255, 255, 0.8);
+        box-shadow: rgba(8, 189, 202, 0.54) 1px 3px 8px;
+        & p {
+          color: rgb(255, 255, 255);
+          margin-left: 225px;
+          font-size: 30px;
+        }
+        & .a {
+          gap: 50px;
+          display: flex;
+          margin-left: 50px;
+          & .roman-list1 {
+            list-style-type: upper-roman;
+            color: aliceblue;
+
+            & a {
+              text-decoration: none;
+              font-size: 22px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .senten {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+     
+    }
+    .sentenI {
+      width: 97%;
+      height: auto;
+      margin-top: 30px;
+       box-shadow: rgba(32, 33, 33, 0.54) 1px 3px 8px;
+      background-color: rgba(230, 230, 230, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .senten1 {
+      width: 320px;
+      height: 50px;
+      background-color: rgb(45, 196, 230);
+      border-radius: 8px;
+      border: solid rgb(255, 255, 255, 0.8);
+      box-shadow: rgba(16, 18, 18, 0.54) 1px 3px 8px;
+      & a {
+        & .h1 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h2 {
+           margin-left: 23px;
+          font-size: 25px;
+          color: white;
+        }
+        & .h3 {
+          margin-left: 45px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h4 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h5 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h6 {
+          margin-left: 40px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h7 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+         & .h8 {
+          margin-left: 25px;
+          font-size: 25px;
+          color: white;
+        }
+      }
+
+    }
+    .senten1_1 {
+      width: 100%;
+      display: flex;
+      & p {
+        width: 70%;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+      }
+
+      & img {
+        width: 30%;
+        height: 260px;
+        border-radius: 10px;
+        border: solid white;
+        box-shadow: rgba(28, 27, 27, 0.54) 1px 3px 8px;
+      }
+    }
+  </style>
+  <body>
+    <a name="up">
+    <div class="fotter">
+      <div class="foter">
+        <font face="Khmer OS Muol Light"
+          ><h1>ការពិពណ៍នាអំពី​ ខេត្តនីមួយៗនៃប្រទេសកម្ពុជា</h1></font
+        >
+      </div>
+    </div>
+
+    <center>
+      <div class="nav-bar">
+        <div class="bar">
+          <font face="Khmer OS Bokor">
+            <a style="text-decoration: none" href="index.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-house"
+              ></i
+              >ទំព័រដើម</a
+            >
+            <a style="text-decoration: none" href="ទំនាក់ទំនង.html"
+              ><i
+                style="font-size: 23px; margin-right: 5px"
+                class="fa-solid fa-circle-user"
+              ></i
+              >ទំនាក់ទំនង</a
+            ><br />
+            <a href="ភ្នំពេញ.html">រាជធានីភ្នំពេញ</a>
+            <a href="កណ្តាល.html">កណ្តាល</a>
+            <a href="កំពង់ចាម.html">កំពង់ចាម</a>
+            <a href="កំពង់ឆ្នាំង.html">កំពង់ឆ្នាំង</a>
+            <a href="កំពង់ស្ពឺ.html">កំពង់ស្ពឺ</a>
+            <a href="កំពង់ធំ.html">កំពង់ធំ</a>
+            <a href="ពោធិ៍សាត់.html">ពោធិ៍សាត់</a>
+            <a href="កំពត.html">កំពត</a>
+            <a href="កែប.html">កែប</a>
+            <a href="កោះកុង.html">កោះកុង</a>
+            <a href="ក្រចេះ.html">ក្រចេះ</a>
+            <a href="ត្បូងឃ្មុំ.html">ត្បូងឃ្មុំ</a>
+            <a href="បាត់ដំបង.html">បាត់ដំបង</a>
+            <a href="ប៉ៃលិន.html">ប៉ៃលិន</a>
+            <a href="ព្រះសីហនុ.html">ព្រះសីហនុ</a>
+            <a href="ស្ទឹងត្រែង.html">ស្ទឹងត្រែង</a>
+            <a href="សៀមរាប.html">សៀមរាប</a>
+            <a href="ស្វាយរៀង.html">ស្វាយរៀង</a>
+            <a href="តាកែវ.html">តាកែវ</a>
+            <a href="រតនគីរី.html">រតនគិរី</a>
+            <a href="ព្រះវិហារ.html">ព្រះវិហារ</a>
+            <a href="ព្រៃវែង.html">ព្រៃវែង</a>
+            <a href="មណ្ឌលគីរី.html">មណ្ឌលគីរី</a>
+            <a href="ឧត្តរមានជ័យ.html">ឧត្តរមានជ័យ</a>
+            <a href="បន្ទាយមានជ័យ.html">បន្ទាយមានជ័យ</a>
+          </font>
+        </div>
+      </div>
+    </center>
+
+    <nav class="title1">
+      <p>
+        <font face="NiDA Preahvihear"
+          ><u><b>ខេត្តព្រះសីហនុ</b></u></font
+        >
+      </p>
+    </nav>
+    <nav class="img">
+      <a name="UP1"></a>
+      <nav class="title">
+        <p><font face="AKbalthom Kbach">មាតិកា</font></p>
+        <nav class="a">
+          <ul class="roman-list1">
+            <font face="AKbalthom KhmerLer Regular">
+              <li>
+                <a href="#up1"
+                  >ភូមិសាស្រ្តខេត្តព្រះសីហនុ..................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up2"
+                  >រដ្ឋបាល​និងការគ្រប់គ្រង...................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up3"
+                  >សេដ្ឋកិច្ច.........................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up4"
+                  >ការអភិវឌ្ឍន៍...................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up5"
+                  >ហេដ្ឋារចនាសម្ព័ន្ធ.............................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up6"
+                  >ចំនួនប្រជាជន..................................................។</a
+                >
+              </li>
+              <li>
+                <a href="#up7"
+                  >ការអប់រំ.........................................................។
+                </a>
+              </li>
+              <li>
+                <a href="#up8"
+                  >តំបន់ទេសចរណ៍..............................................។</a
+                >
+              </li>
+            </font>
+          </ul>
+        </nav>
+      </nav>
+      <img title="ក្រុងព្រះសីហនុ" src="../imgs Province/PreahSihanouk-01.jpg" alt="" />
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 350px;" class="senten1">
+          <a name="up1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">ភូមិសាស្រ្តខេត្តព្រះសីហនុ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តព្រះសីហនុមានទីតាំងនៅភាគត្បូងខាងលិចនៃប្រទេសកម្ពុជា ជាប់មហាសមុទ្រខាងលិច។ ខេត្តមានឆ្នេរខ្សាច់ស្រស់ៗ និងឧបទ្វីបតូចៗជាច្រើនដែលស្ថិតនៅជុំវិញ។ ភូមិសាស្រ្តភាគច្រើនជាឆ្នេរសមុទ្រ និងដីទន្លេ សមស្របសម្រាប់កសិកម្ម និងធនធានសមុទ្រ។ ភូមិសាស្រ្តដ៏ស្រស់ស្អាតនេះបានបង្កើតឱកាសសម្រាប់ការអភិវឌ្ឍទេសចរណ៍។ ខេត្តមានចំណុចសំខាន់សម្រាប់ការដឹកជញ្ជូនជាអាកាសយានដ្ឋាន និងព្រលានចតយន្តហោះ។ តំបន់ជុំវិញមានព្រៃធំ និងទន្លេ ដែលជាស្រុកប្រកបដោយធនធានធម្មជាតិ។ អាកាសធាតុមានលក្ខណៈក្តៅសើម និងមានរដូវភ្លៀងច្រើន។ ភូមិសាស្រ្តនេះមានសារៈសំខាន់សម្រាប់ការអភិវឌ្ឍសេដ្ឋកិច្ច និងសេវាកម្មសមុទ្រ។
+            </font>
+          </p>
+          <img src="../imgs Province/PreahSihanouk-02.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 350px;" class="senten1">
+          <a name="up2"
+            ><h3 class="h2">
+              <font face="Khmer OS Moul">រដ្ឋបាល និង ការគ្រប់គ្រង</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ព្រះសីហនុ/photo_1_2025-08-15_13-22-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;រដ្ឋបាលខេត្តព្រះសីហនុត្រូវបានគ្រប់គ្រងដោយអាជ្ញាធរខេត្តដែលមានតួនាទីក្នុងការគ្រប់គ្រងនិងសម្របសម្រួលការងាររដ្ឋ។ ខេត្តត្រូវបានចែងចែកជាស្រុក និងឃុំ ដើម្បីងាយស្រួលក្នុងការផ្តល់សេវាសាធារណៈ។ រដ្ឋបាលផ្តោតលើការគ្រប់គ្រងការអភិវឌ្ឍទេសចរណ៍ ការអភិរក្សធនធានធម្មជាតិ និងបរិស្ថាន។ ការសហការជាមួយបណ្ដាភាគីរួមមានរដ្ឋាភិបាល ក្រុមហ៊ុនឯកជន និងអង្គការអន្តរជាតិ។ ការបណ្តុះបណ្តាលបុគ្គលិករដ្ឋបានបង្កើនប្រសិទ្ធភាពក្នុងការគ្រប់គ្រង។ ការបញ្ជូនព័ត៌មានតាមបច្ចេកវិទ្យានិងការគ្រប់គ្រងធនធានបានធ្វើការវិវឌ្ឍច្រើន។ មានគម្រោងការងារជាច្រើនដើម្បីបង្កើតសេវាសាធារណៈ និងការងារសម្រាប់ប្រជាជន។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 200px;margin-left: 15px;" class="senten1">
+          <a name="up3"
+            ><h3 class="h3">
+              <font face="Khmer OS Moul">សេដ្ឋកិច្ច</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;សេដ្ឋកិច្ចខេត្តព្រះសីហនុផ្អែកលើវិស័យទេសចរណ៍ជាកំពូល ដោយមានឆ្នេរខ្សាច់ស្រស់ស្អាត និងហាងអាហារផ្សេងៗជាច្រើន។ ការនាំចេញ និងនាំចូលតាមច្រកសមុទ្រនិងកំពង់ផែព្រះសីហនុជួយសំរបសំរួលសេដ្ឋកិច្ចខេត្តយ៉ាងសំខាន់។ ការវិនិយោគក្នុងវិស័យអចលនទ្រព្យ ការបង្កើតហោទ័រនិងអគារអាជីវកម្មកំពុងរីកចម្រើនយ៉ាងលឿន។ ការជួញដូរ និងសេវាកម្មផ្សេងៗជាផ្នែកសំខាន់ក្នុងសេដ្ឋកិច្ច។ ការអភិវឌ្ឍហេដ្ឋារចនាសម្ព័ន្ធ និងផ្លូវអាកាស បានលើកទឹកចិត្តការវិនិយោគជាតិ និងបរទេស។ ការផលិតសមុទ្រដូចជា ត្រី និងស៊ីសង្វាក់កំពុងកើនឡើង ដើម្បីបំពេញតម្រូវការផលិតផលក្នុងនិងក្រៅប្រទេស។
+            </font>
+          </p>
+          <img src="../ព្រះសីហនុ/photo_2_2025-08-15_13-22-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up4"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ការអភិវឌ្ឍន៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ព្រះសីហនុ/photo_3_2025-08-15_13-22-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ការអភិវឌ្ឍខេត្តព្រះសីហុនុផ្អែកលើការកែលម្អហេដ្ឋារចនាសម្ព័ន្ធ និងការកែលម្អសេវាសាធារណៈ។ ការសាងសង់ផ្លូវថ្មីៗ និងការកែលម្អគេហដ្ឋានបានធ្វើឲ្យសភាពរស់នៅកាន់តែប្រសើរ។ ការបង្កើតផ្លូវល្បឿនលឿន និងជំនាញបច្ចេកទេសបានបង្កើតឱកាសការងារថ្មីៗ។ ការវិនិយោគក្នុងវិស័យសុខាភិបាល និងអប់រំកំពុងត្រូវបានពង្រីកដើម្បីលើកស្ទួយគុណភាពជីវិត។ ការសហការជាមួយអង្គការអន្តរជាតិបានជួយផ្គត់ផ្គង់ធនធាន និងបច្ចេកទេសថ្មីៗ។ ការអភិវឌ្ឍបរិស្ថានទាក់ទងនឹងការការពារសមុទ្រនិងធនធានធម្មជាតិនៅក្នុងតំបន់បានផ្ដោតសំខាន់។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 300px;margin-left: 10px;" class="senten1">
+          <a name="up5"
+            ><h3 class="h5">
+              <font face="Khmer OS Moul">ហេដ្ឋារចនាសម្ព័ន្ធ</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ហេដ្ឋារចនាសម្ព័ន្ធខេត្តព្រះសីហនុរីកចម្រើនយ៉ាងលឿន ជាពិសេសផ្លូវជាតិ និងផ្លូវស្រុកបានសាងសង់ថ្មី និងជួសជុល។ កំពង់ផែព្រះសីហនុជាគន្លងសំខាន់សម្រាប់ការនាំចេញនាំចូល និងដឹកជញ្ជូនទំនិញសមុទ្រ។ ប្រព័ន្ធទូរគមនាគមន៍ និងបណ្តាញអ៊ីនធឺណិតកំពុងត្រូវបានធ្វើឲ្យប្រសើរឡើង។ ការបង្កើតមន្ទីរពេទ្យ សាលារៀន និងមជ្ឈមណ្ឌលសុខភាពបានធ្វើឲ្យសេវាសុខាភិបាលកាន់តែប្រសើរ។ ការគ្រប់គ្រងទឹកស្អាត និងអគ្គិសនីត្រូវបានពង្រីកគ្របដណ្តប់តំបន់ជាច្រើន។ ការសាងសង់ស្នាក់ការរដ្ឋាភិបាល និងមជ្ឈមណ្ឌលសេវាកម្មផ្សេងៗបានបង្កើតភាពងាយស្រួលសម្រាប់ប្រជាជន។
+            </font>
+          </p>
+          <img src="../ព្រះសីហនុ/photo_4_2025-08-15_13-22-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+    <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up6"
+            ><h3 class="h4">
+              <font face="Khmer OS Moul">ចំនួនប្រជាជន</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ព្រះសីហនុ/photo_5_2025-08-15_13-22-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តព្រះសីហនុមានប្រជាជនប្រមាណ ១៨០,០០០ នាក់ ដែលភាគច្រើនរស់នៅក្នុងទីរួមក្រុងនិងតំបន់ជនបទជុំវិញ។ ប្រជាជនមានជាតិភាសាខ្មែរជាភាគច្រើន ប៉ុន្តែមានជនជាតិផ្សេងទៀត ដែលជួយបង្កើតភាពចម្រុះវប្បធម៌។ កំណើនប្រជាជនក្នុងខេត្តកំពុងមានល្បឿនលឿន ដោយសារការវិនិយោគ និងការអភិវឌ្ឍសេដ្ឋកិច្ច។ ការផ្តល់សេវាសាធារណៈដូចជា អប់រំ និងសុខាភិបាល កំពុងត្រូវបានពង្រីកដើម្បីបំពេញតម្រូវការប្រជាជនកើនឡើង។ ការគ្រប់គ្រងធនធានធម្មជាតិនិងបរិស្ថានកំពុងត្រូវបានយកចិត្តទុកដាក់យ៉ាងខ្លាំង។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+    
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 150px;margin-left: 15px;" class="senten1">
+          <a name="up7"
+            ><h3 class="h7">
+              <font face="Khmer OS Moul">ការអប់រំ</font>
+            </h3></a
+          >
+        </nav>
+         <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+          <p style=" margin-right: 10px;" align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តព្រះសីហនុមានបណ្តាញសាលារៀនបឋមសិក្សា និងមធ្យមសិក្សាដែលបានកែលម្អគុណភាពនិងបរិក្ខារឡើងជាបន្តបន្ទាប់។ ការបណ្តុះបណ្តាលគ្រូបង្រៀនកំពុងត្រូវបានពង្រីក ដើម្បីឲ្យមានសមត្ថភាពខ្ពស់ក្នុងការបង្រៀន។ កម្មវិធីសិក្សានៅមណ្ឌលបច្ចេកទេស និងវិជ្ជាជីវៈបានបង្កើតឱកាសការងារដល់យុវជន។ ការផ្តល់ជំនួយអាហារូបករណ៍ និងបរិក្ខារសិក្សាជួយបន្ថែមការចូលរួមរបស់កុមារ។ ការអភិវឌ្ឍបណ្តាញអ៊ីនធឺណិតសម្រាប់ការសិក្សាផ្តល់ឱកាសសិក្សាតាមបណ្ដាញ។ ការរួមគ្នារវាងរដ្ឋាភិបាល និងសហគមន៍ក្នុងការអប់រំគឺជាគោលបំណងសំខាន់។
+            </font>
+          </p>
+          <img src="../ព្រះសីហនុ/photo_6_2025-08-15_13-22-59.jpg" alt="logo" />
+        </nav>
+      </nav>
+    </nav>
+
+     <nav class="senten">
+      <nav class="sentenI">
+        <nav style="display: flex;">
+        <nav style="width: 250px;margin-left: 15px;" class="senten1">
+          <a name="up8"
+            ><h3 class="h8">
+              <font face="Khmer OS Moul">តំបន់ទេសចរណ៍</font>
+            </h3></a
+          >
+        </nav>
+        <nav style="width: 135px;margin-left: 20px;" class="senten1">
+          <a style="text-decoration: none;" href="#UP1"
+            ><h3 class="h1">
+              <font face="Khmer OS Moul">មាតិកា</font>
+            </h3>
+            </a
+          >
+        </nav>
+        </nav>
+        <nav class="senten1_1">
+           <img style="margin-top: 15px;" src="../ព្រះសីហនុ/photo_7_2025-08-15_13-22-59.jpg" alt="logo" />
+          <p style=" margin-left: 10px;"  align="justify">
+            <font face="Khmer OS Freehand Regular ">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ខេត្តព្រះសីហនុមានឆ្នេរខ្សាច់ស្អាតជាច្រើនដែលក្លាយជាទីលំនៅសម្រាប់ភ្ញៀវទេសចរណ៍ក្នុងស្រុក និងអន្តរជាតិ។ មានកោះឆ្នេរតូចៗ និងអាគារសមុទ្រ សម្រាប់ធ្វើដំណើរកំសាន្ត និងសកម្មភាពទឹក។ សួនច្បារសមុទ្រ និងផ្សារទំនើបបានផ្ដល់សេវាកម្មបន្ថែមសម្រាប់អ្នកទេសចរណ៍។ ការអភិវឌ្ឍហេដ្ឋារចនាសម្ព័ន្ធទេសចរណ៍បានធ្វើឲ្យតំបន់កាន់តែទាក់ទាញ។ ប្រាសាទនិងវត្តក្នុងតំបន់ផងដែរ ជាជំនួយបន្ថែមដល់ទេសចរណ៍វប្បធម៌។ ការរួមចំណែករបស់សហគមន៍ក្នុងការរក្សាទុកធនធានធម្មជាតិ និងវប្បធម៌គឺសំខាន់ណាស់។ ការផ្សព្វផ្សាយតំបន់ទេសចរណ៍ត្រូវបានធ្វើជាបន្តបន្ទាប់ ដើម្បីទាក់ទាញភ្ញៀវទេសចរណ៍។
+            </font>
+          </p>
+         
+        </nav>
+      </nav>
+    </nav>
+
+     <nav style="width: 100%; height: 100px"></nav>
+
+    <a style="position: fixed; bottom: 57px; right: 20px" href="#up"
+      ><img width="50px" src="../img/button_up-removebg-preview.png" alt=""
+    /></a>
+
+  </body>
+</html>
